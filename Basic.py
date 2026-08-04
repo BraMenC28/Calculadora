@@ -1,5 +1,5 @@
 import math
-class Calculadora:
+class CalculadoraBasica:
     def __init__(self,num_1, num_2, resultado):
         self.num_1=num_1
         self.num_2=num_2
