@@ -1,10 +1,10 @@
 ## interacción con el user
 from Basic import CalculadoraBasica
 from Trigo import CalculadoraTrigonometrica
-print("-----Welcome to the supreme calculator UwU-----" )
+print("-----CWelcome to the supreme calculator UwU-----" )
 
 miCalcBasic= CalculadoraBasica(0,0,0)
-miCalcTrigo= CalculadoraTrigonometrica(0,0,0)
+miCalcTrigo= CalculadoraTrigonometrica(0,0)
 numActual=0
 ciclos=0
 
@@ -12,7 +12,7 @@ ciclos=0
 continuar ="s"
 
 while (continuar=="s"):
-    print(" 1.Suma \n 2. resta \n 3. multiplicacion \n 4. divicion \n 5. seno \n 6. coseno \n 7. tangente")
+    print(" 1.Suma \n 2. resta \n 3. multiplicacion \n 4. divicion \n 5. seno \n 6. coseno \n 7. tangente \n 8. factorial \n 9. maximo comun divisor \n 10. minimo comun multiplo \n 11. IVA")
     opcion=int(input("Escoja una de las opciones :"))
    
     miCalcBasic.num_1=miCalcBasic.resultado
