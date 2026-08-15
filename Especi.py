@@ -14,9 +14,9 @@ class CalculadoraEspecial:
     def raiz(self):#num_1=indice, num_2=argumento
         if self.num_1==0:
             print("No se puede sacar raiz a un numeor evaluado con un indice igua a cero")
-        elif self.num_1%2==0 and self.num_2<0:
+        elif self.num_1%2==0 and self.num_2<0:#indices pares y argumentos negativos
             print("Los datos escritos no tienen solucion real")
-        elif self.num_1>0 and self.num_2<0:
+        elif self.num_1>0 and self.num_2<0: #indices inpares y argumentos negativos
             resultado=-1*((self.num_2*-1)**(1/self.num_1))
             print("El resultado es", resultado)
         else:
@@ -24,11 +24,11 @@ class CalculadoraEspecial:
             print("El resultado es", resultado)
     def fibonacci(self):
         i=0
-        fibo=[0,1]
+        fibo=[0,1]#[0,1,1,2,3,5]
         for i in range (self.num_1):
-            aumento=fibo[-1]+fibo[-2]
+            aumento=fibo[-1]+fibo[-2]#el [-1] es para inicial de derecha a izquierda
             fibo.append(aumento)
-        return fibo[self.num_1-1]
+        return fibo[self.num_1-1]#debido a que el for inicia en cero, se adelanta una unidad.Toca restarla
     def factorial(self):
         if self.num_1<0:
             print("No se puede calcular el factorial de un numero negativo")

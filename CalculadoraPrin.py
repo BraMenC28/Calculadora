@@ -2,7 +2,7 @@ from Basic import CalculadoraBasica
 from Trigo import CalculadoraTrigonometrica
 from Especi import CalculadoraEspecial
 print("-----Calculadora Completa-----" )
-miCalcBasic= CalculadoraBasica(0,0,0)
+miCalcBasic= CalculadoraBasica(0,0,0)#objeto inicializado
 miCalcTrigo= CalculadoraTrigonometrica(0,0)
 miclasEspe=CalculadoraEspecial(0,0,0,0)
 numActual=0
@@ -135,6 +135,6 @@ while (continuar=="s"):
     if continuar=="s" and 1<=opcion<=4:
         ciclos=ciclos+1
         numActual=miCalcBasic.resultado
-        print("ciclos actuales",ciclos)
+        #print("ciclos actuales",ciclos)
         print ("numero acutal", numActual)
         print ("___")
